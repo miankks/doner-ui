@@ -1,0 +1,1190 @@
+[
+  {
+    "docType": "Grant",
+    "id": "G0",
+    "packageId": "P0",
+    "name": "Projekt 1",
+    "researcherId": "Sanja",
+    "year": 2018,
+    "goal": 125000,
+    "amountRaised": 26000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB0",
+        "donationId": "D-m-turBUjO",
+        "donatorId": "DONATOR0",
+        "amount": 1000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB19",
+        "donationId": "D-vNgYtLKdZ",
+        "donatorId": "DONATOR4",
+        "amount": 25000
+      }
+    ],
+    "organisation": "Karolinska Institutet",
+    "department": "Pediatri",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag hos BCF"
+  },
+  {
+    "docType": "Grant",
+    "id": "G1",
+    "packageId": "P0",
+    "name": "Projekt 2",
+    "researcherId": "Robert",
+    "year": 2018,
+    "goal": 125000,
+    "amountRaised": 26000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB0",
+        "donationId": "D-m-turBUjO",
+        "donatorId": "DONATOR0",
+        "amount": 1000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB19",
+        "donationId": "D-vNgYtLKdZ",
+        "donatorId": "DONATOR4",
+        "amount": 25000
+      }
+    ],
+    "organisation": "Lunds universitetssjukhus",
+    "department": "Patologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag hos BCF"
+  },
+  {
+    "docType": "Grant",
+    "id": "G10",
+    "packageId": "P2",
+    "name": "Projekt 11",
+    "researcherId": "Sofia",
+    "year": 2018,
+    "goal": 100000,
+    "amountRaised": 34000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB2",
+        "donationId": "D-A4D7O07iIk",
+        "donatorId": "DONATOR2",
+        "amount": 4000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB21",
+        "donationId": "D-oK4cQi0nQf",
+        "donatorId": "DONATOR6",
+        "amount": 30000
+      }
+    ],
+    "organisation": "Akademiska sjukhuset",
+    "department": "Pediatri",
+    "active": true,
+    "annualReport": "",
+    "status": "Redo för betalning"
+  },
+  {
+    "docType": "Grant",
+    "id": "G11",
+    "packageId": "P2",
+    "name": "Projekt 12",
+    "researcherId": "Pedro",
+    "year": 2018,
+    "goal": 100000,
+    "amountRaised": 34000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB2",
+        "donationId": "D-A4D7O07iIk",
+        "donatorId": "DONATOR2",
+        "amount": 4000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB21",
+        "donationId": "D-oK4cQi0nQf",
+        "donatorId": "DONATOR6",
+        "amount": 30000
+      }
+    ],
+    "organisation": "Göteborgs Universitet",
+    "department": "Onkologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Redo för betalning"
+  },
+  {
+    "docType": "Grant",
+    "id": "G12",
+    "packageId": "P3",
+    "name": "Projekt 13",
+    "researcherId": "Mary",
+    "year": 2018,
+    "goal": 125000,
+    "amountRaised": 75000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB3",
+        "donationId": "D-u3EnuNsJCY",
+        "donatorId": "DONATOR3",
+        "amount": 10000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB22",
+        "donationId": "D-QITiKedcOq",
+        "donatorId": "DONATOR7",
+        "amount": 65000
+      }
+    ],
+    "organisation": "Karolinska Institutet",
+    "department": "Onkologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag hos BCF"
+  },
+  {
+    "docType": "Grant",
+    "id": "G13",
+    "packageId": "P3",
+    "name": "Projekt 14",
+    "researcherId": "Noella",
+    "year": 2018,
+    "goal": 125000,
+    "amountRaised": 75000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB3",
+        "donationId": "D-u3EnuNsJCY",
+        "donatorId": "DONATOR3",
+        "amount": 10000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB22",
+        "donationId": "D-QITiKedcOq",
+        "donatorId": "DONATOR7",
+        "amount": 65000
+      }
+    ],
+    "organisation": "Lunds universitetssjukhus",
+    "department": "Pediatri",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag hos BCF"
+  },
+  {
+    "docType": "Grant",
+    "id": "G14",
+    "packageId": "P3",
+    "name": "Projekt 15",
+    "researcherId": "Yasmine",
+    "year": 2018,
+    "goal": 125000,
+    "amountRaised": 75000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB3",
+        "donationId": "D-u3EnuNsJCY",
+        "donatorId": "DONATOR3",
+        "amount": 10000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB22",
+        "donationId": "D-QITiKedcOq",
+        "donatorId": "DONATOR7",
+        "amount": 65000
+      }
+    ],
+    "organisation": "Akademiska sjukhuset",
+    "department": "Patologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Redo för betalning"
+  },
+  {
+    "docType": "Grant",
+    "id": "G15",
+    "packageId": "P3",
+    "name": "Projekt 16",
+    "researcherId": "Filippo",
+    "year": 2018,
+    "goal": 125000,
+    "amountRaised": 75000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB3",
+        "donationId": "D-u3EnuNsJCY",
+        "donatorId": "DONATOR3",
+        "amount": 10000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB22",
+        "donationId": "D-QITiKedcOq",
+        "donatorId": "DONATOR7",
+        "amount": 65000
+      }
+    ],
+    "organisation": "Göteborgs Universitet",
+    "department": "Patologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Redo för betalning"
+  },
+  {
+    "docType": "Grant",
+    "id": "G8",
+    "packageId": "P2",
+    "name": "Projekt 9",
+    "researcherId": "Mehmet",
+    "year": 2018,
+    "goal": 100000,
+    "amountRaised": 34000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB2",
+        "donationId": "D-A4D7O07iIk",
+        "donatorId": "DONATOR2",
+        "amount": 4000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB21",
+        "donationId": "D-oK4cQi0nQf",
+        "donatorId": "DONATOR6",
+        "amount": 30000
+      }
+    ],
+    "organisation": "Karolinska Institutet",
+    "department": "Patologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag hos BCF"
+  },
+  {
+    "docType": "Grant",
+    "id": "G7",
+    "packageId": "P1",
+    "name": "Projekt 8",
+    "researcherId": "Chen",
+    "year": 2018,
+    "goal": 250000,
+    "amountRaised": 102000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB1",
+        "donationId": "D-wN2ugzOvvp",
+        "donatorId": "DONATOR1",
+        "amount": 2000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB20",
+        "donationId": "D-2sop3NhNMs",
+        "donatorId": "DONATOR5",
+        "amount": 100000
+      }
+    ],
+    "organisation": "Göteborgs Universitet",
+    "department": "Biomedicin",
+    "active": true,
+    "annualReport": "",
+    "status": "Redo för betalning"
+  },
+  {
+    "docType": "Grant",
+    "id": "G6",
+    "packageId": "P1",
+    "name": "Projekt 7",
+    "researcherId": "Lejuan",
+    "year": 2018,
+    "goal": 250000,
+    "amountRaised": 102000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB1",
+        "donationId": "D-wN2ugzOvvp",
+        "donatorId": "DONATOR1",
+        "amount": 2000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB20",
+        "donationId": "D-2sop3NhNMs",
+        "donatorId": "DONATOR5",
+        "amount": 100000
+      }
+    ],
+    "organisation": "Akademiska sjukhuset",
+    "department": "Onkologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Redo för betalning"
+  },
+  {
+    "docType": "Grant",
+    "id": "G5",
+    "packageId": "P1",
+    "name": "Projekt 6",
+    "researcherId": "Margret",
+    "year": 2018,
+    "goal": 250000,
+    "amountRaised": 102000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB1",
+        "donationId": "D-wN2ugzOvvp",
+        "donatorId": "DONATOR1",
+        "amount": 2000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB20",
+        "donationId": "D-2sop3NhNMs",
+        "donatorId": "DONATOR5",
+        "amount": 100000
+      }
+    ],
+    "organisation": "Lunds universitetssjukhus",
+    "department": "Onkologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag hos BCF"
+  },
+  {
+    "docType": "Grant",
+    "id": "G2",
+    "packageId": "P0",
+    "name": "Projekt 3",
+    "researcherId": "Adam",
+    "year": 2018,
+    "goal": 125000,
+    "amountRaised": 26000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB0",
+        "donationId": "D-m-turBUjO",
+        "donatorId": "DONATOR0",
+        "amount": 1000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB19",
+        "donationId": "D-vNgYtLKdZ",
+        "donatorId": "DONATOR4",
+        "amount": 25000
+      }
+    ],
+    "organisation": "Akademiska sjukhuset",
+    "department": "Biomedicin",
+    "active": true,
+    "annualReport": "",
+    "status": "Redo för betalning"
+  },
+  {
+    "docType": "Grant",
+    "id": "G4",
+    "packageId": "P1",
+    "name": "Projekt 5",
+    "researcherId": "Ann",
+    "year": 2018,
+    "goal": 250000,
+    "amountRaised": 102000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB1",
+        "donationId": "D-wN2ugzOvvp",
+        "donatorId": "DONATOR1",
+        "amount": 2000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB20",
+        "donationId": "D-2sop3NhNMs",
+        "donatorId": "DONATOR5",
+        "amount": 100000
+      }
+    ],
+    "organisation": "Karolinska Institutet",
+    "department": "Biomedicin",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag hos BCF"
+  },
+  {
+    "docType": "Grant",
+    "id": "G3",
+    "packageId": "P0",
+    "name": "Projekt 4",
+    "researcherId": "Ahmed",
+    "year": 2018,
+    "goal": 125000,
+    "amountRaised": 26000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB0",
+        "donationId": "D-m-turBUjO",
+        "donatorId": "DONATOR0",
+        "amount": 1000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB19",
+        "donationId": "D-vNgYtLKdZ",
+        "donatorId": "DONATOR4",
+        "amount": 25000
+      }
+    ],
+    "organisation": "Göteborgs Universitet",
+    "department": "Pediatri",
+    "active": true,
+    "annualReport": "",
+    "status": "Redo för betalning"
+  },
+  {
+    "docType": "Grant",
+    "id": "G9",
+    "packageId": "P2",
+    "name": "Projekt 10",
+    "researcherId": "Anders",
+    "year": 2018,
+    "goal": 100000,
+    "amountRaised": 34000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB2",
+        "donationId": "D-A4D7O07iIk",
+        "donatorId": "DONATOR2",
+        "amount": 4000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB21",
+        "donationId": "D-oK4cQi0nQf",
+        "donatorId": "DONATOR6",
+        "amount": 30000
+      }
+    ],
+    "organisation": "Lunds universitetssjukhus",
+    "department": "Biomedicin",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag hos BCF"
+  },
+  {
+    "docType": "Grant",
+    "id": "G22",
+    "packageId": "P5",
+    "name": "Projekt 7",
+    "researcherId": "Lejuan",
+    "year": 2017,
+    "goal": 125000,
+    "amountRaised": 125000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB6",
+        "donationId": "D-stle9-8uza",
+        "donatorId": "DONATOR2",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB7",
+        "donationId": "D-EwRNvkxHo8",
+        "donatorId": "DONATOR3",
+        "amount": 12500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB8",
+        "donationId": "D-nEk8llHYqt",
+        "donatorId": "DONATOR0",
+        "amount": 37500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB9",
+        "donationId": "D-RQCOV9G5RD",
+        "donatorId": "DONATOR1",
+        "amount": 50000
+      }
+    ],
+    "organisation": "Akademiska sjukhuset",
+    "department": "Onkologi",
+    "active": false,
+    "annualReport": "We did this and that",
+    "status": "Rapport mottagen"
+  },
+  {
+    "docType": "Grant",
+    "id": "G24",
+    "packageId": "P6",
+    "name": "Projekt 9",
+    "researcherId": "Mehmet",
+    "year": 2017,
+    "goal": 250000,
+    "amountRaised": 250000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB10",
+        "donationId": "D-WZda3IDwoU",
+        "donatorId": "DONATOR2",
+        "amount": 62500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB11",
+        "donationId": "D-5oEBYxL8gx",
+        "donatorId": "DONATOR3",
+        "amount": 75000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB12",
+        "donationId": "D-IYw_28G_Gr",
+        "donatorId": "DONATOR0",
+        "amount": 112500
+      }
+    ],
+    "organisation": "Karolinska Institutet",
+    "department": "Patologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag mottaget"
+  },
+  {
+    "docType": "Grant",
+    "id": "G25",
+    "packageId": "P6",
+    "name": "Projekt 10",
+    "researcherId": "Anders",
+    "year": 2017,
+    "goal": 250000,
+    "amountRaised": 250000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB10",
+        "donationId": "D-WZda3IDwoU",
+        "donatorId": "DONATOR2",
+        "amount": 62500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB11",
+        "donationId": "D-5oEBYxL8gx",
+        "donatorId": "DONATOR3",
+        "amount": 75000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB12",
+        "donationId": "D-IYw_28G_Gr",
+        "donatorId": "DONATOR0",
+        "amount": 112500
+      }
+    ],
+    "organisation": "Lunds universitetssjukhus",
+    "department": "Biomedicin",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag mottaget"
+  },
+  {
+    "docType": "Grant",
+    "id": "G26",
+    "packageId": "P6",
+    "name": "Projekt 11",
+    "researcherId": "Sofia",
+    "year": 2017,
+    "goal": 250000,
+    "amountRaised": 250000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB10",
+        "donationId": "D-WZda3IDwoU",
+        "donatorId": "DONATOR2",
+        "amount": 62500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB11",
+        "donationId": "D-5oEBYxL8gx",
+        "donatorId": "DONATOR3",
+        "amount": 75000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB12",
+        "donationId": "D-IYw_28G_Gr",
+        "donatorId": "DONATOR0",
+        "amount": 112500
+      }
+    ],
+    "organisation": "Akademiska sjukhuset",
+    "department": "Pediatri",
+    "active": false,
+    "annualReport": "We did this and that",
+    "status": "Rapport mottagen"
+  },
+  {
+    "docType": "Grant",
+    "id": "G27",
+    "packageId": "P6",
+    "name": "Projekt 12",
+    "researcherId": "Pedro",
+    "year": 2017,
+    "goal": 250000,
+    "amountRaised": 250000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB10",
+        "donationId": "D-WZda3IDwoU",
+        "donatorId": "DONATOR2",
+        "amount": 62500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB11",
+        "donationId": "D-5oEBYxL8gx",
+        "donatorId": "DONATOR3",
+        "amount": 75000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB12",
+        "donationId": "D-IYw_28G_Gr",
+        "donatorId": "DONATOR0",
+        "amount": 112500
+      }
+    ],
+    "organisation": "Göteborgs Universitet",
+    "department": "Onkologi",
+    "active": false,
+    "annualReport": "We did this and that",
+    "status": "Rapport mottagen"
+  },
+  {
+    "docType": "Grant",
+    "id": "G28",
+    "packageId": "P7",
+    "name": "Projekt 13",
+    "researcherId": "Mary",
+    "year": 2017,
+    "goal": 500000,
+    "amountRaised": 500000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB13",
+        "donationId": "D-wuhTybnR17",
+        "donatorId": "DONATOR1",
+        "amount": 100000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB14",
+        "donationId": "D-pXX15IQ81-",
+        "donatorId": "DONATOR2",
+        "amount": 37500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB15",
+        "donationId": "D-qgpmlD-hNo",
+        "donatorId": "DONATOR3",
+        "amount": 87500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB16",
+        "donationId": "D-tNZLCTPok2x",
+        "donatorId": "DONATOR0",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB17",
+        "donationId": "D-7fkDvcVfIqb",
+        "donatorId": "DONATOR1",
+        "amount": 125000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB18",
+        "donationId": "D-sVUbfIGGAsi",
+        "donatorId": "DONATOR2",
+        "amount": 125000
+      }
+    ],
+    "organisation": "Karolinska Institutet",
+    "department": "Onkologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag mottaget"
+  },
+  {
+    "docType": "Grant",
+    "id": "G29",
+    "packageId": "P7",
+    "name": "Projekt 14",
+    "researcherId": "Noella",
+    "year": 2017,
+    "goal": 500000,
+    "amountRaised": 500000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB13",
+        "donationId": "D-wuhTybnR17",
+        "donatorId": "DONATOR1",
+        "amount": 100000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB14",
+        "donationId": "D-pXX15IQ81-",
+        "donatorId": "DONATOR2",
+        "amount": 37500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB15",
+        "donationId": "D-qgpmlD-hNo",
+        "donatorId": "DONATOR3",
+        "amount": 87500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB16",
+        "donationId": "D-tNZLCTPok2x",
+        "donatorId": "DONATOR0",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB17",
+        "donationId": "D-7fkDvcVfIqb",
+        "donatorId": "DONATOR1",
+        "amount": 125000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB18",
+        "donationId": "D-sVUbfIGGAsi",
+        "donatorId": "DONATOR2",
+        "amount": 125000
+      }
+    ],
+    "organisation": "Lunds universitetssjukhus",
+    "department": "Pediatri",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag mottaget"
+  },
+  {
+    "docType": "Grant",
+    "id": "G21",
+    "packageId": "P5",
+    "name": "Projekt 6",
+    "researcherId": "Margret",
+    "year": 2017,
+    "goal": 125000,
+    "amountRaised": 125000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB6",
+        "donationId": "D-stle9-8uza",
+        "donatorId": "DONATOR2",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB7",
+        "donationId": "D-EwRNvkxHo8",
+        "donatorId": "DONATOR3",
+        "amount": 12500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB8",
+        "donationId": "D-nEk8llHYqt",
+        "donatorId": "DONATOR0",
+        "amount": 37500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB9",
+        "donationId": "D-RQCOV9G5RD",
+        "donatorId": "DONATOR1",
+        "amount": 50000
+      }
+    ],
+    "organisation": "Lunds universitetssjukhus",
+    "department": "Onkologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag mottaget"
+  },
+  {
+    "docType": "Grant",
+    "id": "G30",
+    "packageId": "P7",
+    "name": "Projekt 15",
+    "researcherId": "Yasmine",
+    "year": 2017,
+    "goal": 500000,
+    "amountRaised": 500000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB13",
+        "donationId": "D-wuhTybnR17",
+        "donatorId": "DONATOR1",
+        "amount": 100000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB14",
+        "donationId": "D-pXX15IQ81-",
+        "donatorId": "DONATOR2",
+        "amount": 37500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB15",
+        "donationId": "D-qgpmlD-hNo",
+        "donatorId": "DONATOR3",
+        "amount": 87500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB16",
+        "donationId": "D-tNZLCTPok2x",
+        "donatorId": "DONATOR0",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB17",
+        "donationId": "D-7fkDvcVfIqb",
+        "donatorId": "DONATOR1",
+        "amount": 125000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB18",
+        "donationId": "D-sVUbfIGGAsi",
+        "donatorId": "DONATOR2",
+        "amount": 125000
+      }
+    ],
+    "organisation": "Akademiska sjukhuset",
+    "department": "Patologi",
+    "active": false,
+    "annualReport": "We did this and that",
+    "status": "Rapport mottagen"
+  },
+  {
+    "docType": "Grant",
+    "id": "G31",
+    "packageId": "P7",
+    "name": "Projekt 16",
+    "researcherId": "Filippo",
+    "year": 2017,
+    "goal": 500000,
+    "amountRaised": 500000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB13",
+        "donationId": "D-wuhTybnR17",
+        "donatorId": "DONATOR1",
+        "amount": 100000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB14",
+        "donationId": "D-pXX15IQ81-",
+        "donatorId": "DONATOR2",
+        "amount": 37500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB15",
+        "donationId": "D-qgpmlD-hNo",
+        "donatorId": "DONATOR3",
+        "amount": 87500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB16",
+        "donationId": "D-tNZLCTPok2x",
+        "donatorId": "DONATOR0",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB17",
+        "donationId": "D-7fkDvcVfIqb",
+        "donatorId": "DONATOR1",
+        "amount": 125000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB18",
+        "donationId": "D-sVUbfIGGAsi",
+        "donatorId": "DONATOR2",
+        "amount": 125000
+      }
+    ],
+    "organisation": "Göteborgs Universitet",
+    "department": "Patologi",
+    "active": false,
+    "annualReport": "We did this and that",
+    "status": "Rapport mottagen"
+  },
+  {
+    "docType": "Grant",
+    "id": "G20",
+    "packageId": "P5",
+    "name": "Projekt 5",
+    "researcherId": "Ann",
+    "year": 2017,
+    "goal": 125000,
+    "amountRaised": 125000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB6",
+        "donationId": "D-stle9-8uza",
+        "donatorId": "DONATOR2",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB7",
+        "donationId": "D-EwRNvkxHo8",
+        "donatorId": "DONATOR3",
+        "amount": 12500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB8",
+        "donationId": "D-nEk8llHYqt",
+        "donatorId": "DONATOR0",
+        "amount": 37500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB9",
+        "donationId": "D-RQCOV9G5RD",
+        "donatorId": "DONATOR1",
+        "amount": 50000
+      }
+    ],
+    "organisation": "Karolinska Institutet",
+    "department": "Biomedicin",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag mottaget"
+  },
+  {
+    "docType": "Grant",
+    "id": "G19",
+    "packageId": "P4",
+    "name": "Projekt 4",
+    "researcherId": "Ahmed",
+    "year": 2017,
+    "goal": 50000,
+    "amountRaised": 50000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB4",
+        "donationId": "D-e13jxAV5SV",
+        "donatorId": "DONATOR0",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB5",
+        "donationId": "D-6fF9lDE3-k",
+        "donatorId": "DONATOR1",
+        "amount": 25000
+      }
+    ],
+    "organisation": "Göteborgs Universitet",
+    "department": "Pediatri",
+    "active": false,
+    "annualReport": "We did this and that",
+    "status": "Rapport mottagen"
+  },
+  {
+    "docType": "Grant",
+    "id": "G18",
+    "packageId": "P4",
+    "name": "Projekt 3",
+    "researcherId": "Adam",
+    "year": 2017,
+    "goal": 50000,
+    "amountRaised": 50000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB4",
+        "donationId": "D-e13jxAV5SV",
+        "donatorId": "DONATOR0",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB5",
+        "donationId": "D-6fF9lDE3-k",
+        "donatorId": "DONATOR1",
+        "amount": 25000
+      }
+    ],
+    "organisation": "Akademiska sjukhuset",
+    "department": "Biomedicin",
+    "active": false,
+    "annualReport": "We did this and that",
+    "status": "Rapport mottagen"
+  },
+  {
+    "docType": "Grant",
+    "id": "G17",
+    "packageId": "P4",
+    "name": "Projekt 2",
+    "researcherId": "Robert",
+    "year": 2017,
+    "goal": 50000,
+    "amountRaised": 50000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB4",
+        "donationId": "D-e13jxAV5SV",
+        "donatorId": "DONATOR0",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB5",
+        "donationId": "D-6fF9lDE3-k",
+        "donatorId": "DONATOR1",
+        "amount": 25000
+      }
+    ],
+    "organisation": "Lunds universitetssjukhus",
+    "department": "Patologi",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag mottaget"
+  },
+  {
+    "docType": "Grant",
+    "id": "G16",
+    "packageId": "P4",
+    "name": "Projekt 1",
+    "researcherId": "Sanja",
+    "year": 2017,
+    "goal": 50000,
+    "amountRaised": 50000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB4",
+        "donationId": "D-e13jxAV5SV",
+        "donatorId": "DONATOR0",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB5",
+        "donationId": "D-6fF9lDE3-k",
+        "donatorId": "DONATOR1",
+        "amount": 25000
+      }
+    ],
+    "organisation": "Karolinska Institutet",
+    "department": "Pediatri",
+    "active": true,
+    "annualReport": "",
+    "status": "Anslag mottaget"
+  },
+  {
+    "docType": "Grant",
+    "id": "G23",
+    "packageId": "P5",
+    "name": "Projekt 8",
+    "researcherId": "Chen",
+    "year": 2017,
+    "goal": 125000,
+    "amountRaised": 125000,
+    "subdonations": [
+      {
+        "docType": "Subdonation",
+        "id": "SB6",
+        "donationId": "D-stle9-8uza",
+        "donatorId": "DONATOR2",
+        "amount": 25000
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB7",
+        "donationId": "D-EwRNvkxHo8",
+        "donatorId": "DONATOR3",
+        "amount": 12500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB8",
+        "donationId": "D-nEk8llHYqt",
+        "donatorId": "DONATOR0",
+        "amount": 37500
+      },
+      {
+        "docType": "Subdonation",
+        "id": "SB9",
+        "donationId": "D-RQCOV9G5RD",
+        "donatorId": "DONATOR1",
+        "amount": 50000
+      }
+    ],
+    "organisation": "Göteborgs Universitet",
+    "department": "Biomedicin",
+    "active": false,
+    "annualReport": "We did this and that",
+    "status": "Rapport mottagen"
+  }
+]

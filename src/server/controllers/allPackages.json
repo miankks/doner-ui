@@ -1,0 +1,130 @@
+[
+  {
+    "active": true,
+    "amountRaised": 104000,
+    "description": "Världsledande forskning som ökar kunskapen om tumörers genetik och förbättrar behandlingen av aggressiv cancer som inte går att bota.",
+    "docType": "Package",
+    "goal": 500000,
+    "grants": [
+      "G0",
+      "G1",
+      "G2",
+      "G3"
+    ],
+    "id": "P0",
+    "name": "Neuroblastom",
+    "shortDescription": "Världsledande forskning som ökar kunskapen om tumörers genetik"
+  },
+  {
+    "active": true,
+    "amountRaised": 408000,
+    "description": "Internationella samarbetsprojekt som ökar överlevnaden och minskar livslånga komplikationer genom att individanpassa och optimera behandlingen.",
+    "docType": "Package",
+    "goal": 1000000,
+    "grants": [
+      "G4",
+      "G5",
+      "G6",
+      "G7"
+    ],
+    "id": "P1",
+    "name": "Leukemi",
+    "shortDescription": "Internationella samarbetsprojekt"
+  },
+  {
+    "active": true,
+    "amountRaised": 136000,
+    "description": "Nya studier för att förbättra diagnostik och anpassa behandlingsformer",
+    "docType": "Package",
+    "goal": 400000,
+    "grants": [
+      "G8",
+      "G9",
+      "G10",
+      "G11"
+    ],
+    "id": "P2",
+    "name": "Tumörer i centrala nervsystemet",
+    "shortDescription": "Nya studier för att förbättra diagnostik och anpassa behandlingsformer"
+  },
+  {
+    "active": true,
+    "amountRaised": 300000,
+    "description": "Forskning för att förbättra omhändertagande och vård för att öka överlevnaden och minska lidandet för barn med cancer",
+    "docType": "Package",
+    "goal": 500000,
+    "grants": [
+      "G12",
+      "G13",
+      "G14",
+      "G15"
+    ],
+    "id": "P3",
+    "name": "Forskning inom fondonvård",
+    "shortDescription": "Forskning för att förbättra omhändertagande och vård"
+  },
+  {
+    "active": false,
+    "amountRaised": 200000,
+    "description": "Världsledande forskning som ökar kunskapen om tumörers genetik och förbättrar behandlingen av aggressiv cancer som inte går att bota.",
+    "docType": "Package",
+    "goal": 200000,
+    "grants": [
+      "G16",
+      "G17",
+      "G18",
+      "G19"
+    ],
+    "id": "P4",
+    "name": "Neuroblastom",
+    "shortDescription": "Världsledande forskning som ökar kunskapen om tumörers genetik"
+  },
+  {
+    "active": false,
+    "amountRaised": 500000,
+    "description": "Internationella samarbetsprojekt som ökar överlevnaden och minskar livslånga komplikationer genom att individanpassa och optimera behandlingen.",
+    "docType": "Package",
+    "goal": 500000,
+    "grants": [
+      "G20",
+      "G21",
+      "G22",
+      "G23"
+    ],
+    "id": "P5",
+    "name": "Leukemi",
+    "shortDescription": "Internationella samarbetsprojekt"
+  },
+  {
+    "active": false,
+    "amountRaised": 1000000,
+    "description": "Nya studier för att förbättra diagnostik och anpassa behandlingsformer",
+    "docType": "Package",
+    "goal": 1000000,
+    "grants": [
+      "G24",
+      "G25",
+      "G26",
+      "G27"
+    ],
+    "id": "P6",
+    "name": "Tumörer i centrala nervsystemet",
+    "shortDescription": "Nya studier för att förbättra diagnostik och anpassa behandlingsformer"
+  },
+  {
+    "active": false,
+    "amountRaised": 2000000,
+    "description": "Forskning för att förbättra omhändertagande och vård för att öka överlevnaden och minska lidandet för barn med cancer",
+    "docType": "Package",
+    "goal": 2000000,
+    "grants": [
+      "G28",
+      "G29",
+      "G30",
+      "G31"
+    ],
+    "id": "P7",
+    "name": "Forskning inom fondnvård",
+    "shortDescription": "Forskning för att förbättra omhändertagande och vård"
+  }
+]

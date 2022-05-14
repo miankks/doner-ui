@@ -1,0 +1,365 @@
+/* Progress bar css */
+
+.js-howmuchtogive label {
+    line-height: 1.4;
+    margin-bottom: 5px;
+    display: block;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #4a4a4a;
+}
+
+.js-howmuchtogive input{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    padding: 0.5rem;
+    border: 1px solid #235ba9;
+    margin: 0 0 1rem;
+    font-size: 18px;
+    color: #235ba9;
+    background-color: white;
+    box-shadow: none;
+    transition: box-shadow 0.5s, border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-appearance: none;
+}
+
+fieldset {
+    display: block;
+    padding-block-start: 3em;
+    /*margin-inline-start: 45px;
+    margin-inline-end: 45px;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;*/
+    border-width: 2px;
+    /* border-style: groove;
+    border-color: threedface;
+    border-image: initial; */
+}
+
+.button-group--paygroup {
+    margin-top: 5px;
+}
+
+.button-group {
+    margin-bottom: 1rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.button-group button {
+  flex: 1 1 auto;
+}
+
+.donationpackage-buttons{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.donationpackage-buttons:focus{
+    border: none;
+}
+
+.button-group--paygroup .donationpackage-buttons:last-child{
+    border-radius: 0 6px 6px 0;
+    border-right-width: 2px;
+}
+.button-group--paygroup .donationpackage-buttons:first-child{
+    border-radius: 6px 0 0 6px;
+    border-right-width: 0;
+}
+
+/* .filler{
+    background: #c10404;
+    width:80%;
+    transition: width .2s ease-in;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.filler1{
+    background: #c10404;
+    width:80%;
+    transition: width .2s ease-in;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+} */
+
+/* .progress-bar{
+    padding-top: 30px;
+    float: left;
+}
+
+.progress-bar1{
+    float: left;
+    width: 20%;
+    margin-top: 55px;
+} */
+
+/* .progress-bar-filler{
+    position: relative;
+    float: right;
+    height: 10%;
+    width: 8px;
+    left: 16%;
+    bottom: 3px;
+    border-radius: 1px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.progress-bar-filler1{
+    top: 10px;
+    position: relative;
+    float: right;
+    height: 10%;
+    width: 10px;
+    left: 19%;
+    border-radius: 1px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+} */
+
+.progressbar-image img{
+    width: 25%;
+    float: right;
+}
+
+.progressbar-image1 img{
+    width: 30%;
+    float: right;
+}
+
+/* End Progress bar css */
+
+/* More progress bars css */
+
+.more-progress-bars{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: lightgray;
+}
+
+/* End more progress bars css */
+
+/* Donation package css */
+
+.donation-area{
+    display: block;
+    margin-right: 850px;
+}
+
+.donation-area h3{
+    font-weight: bold;
+}
+  
+.donation-area p{
+    line-height: 1.5em;
+}
+
+button.bx--btn{
+    width: 33%;
+}
+
+.bx--btn--secondary:nth-child(3n-1){
+    border-right: none; 
+}
+
+.bx--btn--primary {
+    background-color: rgb(245, 246, 247);
+    /* background-color: rgb(61, 112, 178); */
+    /* color: rgb(255, 255, 255); */
+    color: rgb(41, 48, 153);
+}
+.donate-button{
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.progressbar-text{
+    font-size: 12px;
+    float: right;
+    padding-top: 95px;
+}
+
+.donation-lower-table td{
+    font-size: 12px;
+}
+
+/* End donation package css */
+
+/* Donor donations css */
+
+h3{
+    line-height: 2em;
+}
+
+.border-outline{
+    width: fit-content;
+    height:auto;
+    border-style:solid;
+    border-width:2px;
+    border-color: #4897d2;
+    padding:20px;
+    margin-bottom:20px;
+  }
+
+.research-package-card {
+  border-style:solid;
+  border-width:2px;
+  border-color: #4897d2;
+  padding: 40px;
+  margin: auto;
+  width: 60%;
+  margin-bottom:20px;
+}
+
+  
+.donation-packet{
+    font-weight: bold;
+}
+
+.donation-packet-text{
+    width: 70%;
+}
+
+.fulldiv{
+    width: 100%;
+    height: auto;
+    /* margin-left: 400px;
+    margin-top: 50px; */
+}
+
+.fulldiv1{
+    width: 100%;
+    height: auto;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.research-package-tile1 {
+    width:40%;
+    padding:20px;
+    float:left;
+}
+.research-package-text1{
+    display: block;
+}
+
+.research-package-bar1{
+    width: 100%;
+    float: left;
+    color: #4897d2;
+    font-size: 18px;
+} 
+
+.research-package-tile {
+    width:40%;
+    padding:20px;
+    float:left;
+}
+
+
+.research-package-text{
+    width: 70%;
+    float: left;
+}
+.research-package-text2{
+    display: block;
+}
+
+.research-package-bar{
+    width: 20%;
+    float: left;
+}
+
+
+.research-package-link{
+    display: inline-block;
+}
+.research-package-tile:nth-child(4n+1), .research-package-tile:nth-child(4n+4) {
+  background-color: #4897d2;
+  color:white;
+}
+
+.research-package-tile .bx--btn--secondary {
+  border-width: 3px;
+  border-style: solid;
+  border-color: #4897d2;
+  border-radius: 2px;
+  margin:auto;
+  display:block;
+}
+
+.research-package-tile:nth-child(4n+1) .bx--btn--secondary, .research-package-tile:nth-child(4n+4) .bx--btn--secondary {
+  
+  border-color:white;
+  color:white;
+}
+
+/* End donor donations css */
+
+
+.thermometer-bars{
+    width: 100%;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 100px;
+}
+.indivisual-project-bar{
+    /* width: 100%; */
+    display: block;
+}
+
+.indivisual-project-bar1{
+    width: 100%;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.indivisual-project-bar-name{
+    /* margin-left: 20px; */
+    font-size: 10px;
+    float: left;
+    padding-left: 15px;
+    
+}
+
+.indivisual-project-bar-name span{
+    /* margin-left: 200px; */
+    font-weight: bold;
+}
+
+.inside-package-progressbar{
+    float: left;
+    /* padding-left: 50px; */
+    margin-left: -180px;
+    
+}
+
+.gava-help-text{
+    font-weight: bold;
+}
+
+.tile-funding {
+  flex: 1 1 auto;
+  padding: 5px;
+  text-align: left;
+
+}
+
+.blue-text {
+  color: #4897d2;
+}

@@ -1,0 +1,26 @@
+
+
+.thanks-container {
+  margin: auto;
+  width: 50%;
+  padding-top: 30px;
+}
+
+.thanks-image {
+  height: 50%;
+  background-image: url("~../static/images/Thank_you_page_IBM.jpg");
+  background-size: cover;
+}
+
+.thanks-centered {
+  text-align: center;
+}
+
+.thanks-message {
+  font-size: 2rem;
+  color: #f1f1f1; /* Grey text */
+  padding-left: 60px;
+  padding-top: 30%;
+  padding-right: 5%;
+}
+

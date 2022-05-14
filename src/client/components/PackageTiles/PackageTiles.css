@@ -1,0 +1,47 @@
+.tile-package {
+  width: 50%;
+  flex: none;
+  text-align: left;
+}
+
+.tile-package:nth-child(4n+1), .tile-package:nth-child(4n+4) {
+  background-color: #4897d2;
+  color:white;
+}
+
+.tile-package .package-button {
+  border-color: #4897d2;
+  color: #4897d2;
+}
+
+.tile-package .package-button:hover {
+  border-color: #4897d2;
+  color: white;
+}
+
+.tile-package:nth-child(4n+1) .package-button, .tile-package:nth-child(4n+4) .package-button {
+  border-color:white;
+  color:white;
+}
+
+.tile-package .tile-inner {
+  display: flex;
+  flex-flow: row;
+}
+
+.tile-inner-column {
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 auto;
+}
+
+.tile-package .tile-inner-text {
+  flex: 1 1 auto;
+}
+
+.tile-package .tile-inner-bar {
+  padding-left: 25px;
+
+  flex: 1 1 auto;
+  flex: none;
+}

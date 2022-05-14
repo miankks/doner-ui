@@ -1,0 +1,53 @@
+/*
+  Copied from barncancerfonden.se
+*/
+
+
+body {
+  font-family: myriad-pro, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: myriad-pro, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #333333;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+  --end
+  Copied from barncancerfonden.se
+*/
+
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row;
+}
+
+.flex-wrap-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+h1 {
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+p {
+  padding-bottom: 15px;
+}
+

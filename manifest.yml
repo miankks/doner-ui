@@ -1,0 +1,10 @@
+applications:
+- name: bcf-doner-ui
+  memory: 128M
+  buildpack: sdk-for-nodejs
+  command: node dist/index.js
+  path: .
+  instances: 1
+  timeout: 120
+  env:
+    NODE_ENV: production

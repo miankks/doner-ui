@@ -1,0 +1,58 @@
+
+.tile-row {
+  flex-wrap: nowrap;
+}
+
+.tile {
+  display: flex;
+  flex-flow: column;
+  padding: 35px;
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.tile-inner {
+  flex: 1 1 auto;
+}
+
+.tile-buttons {
+  text-align: center;
+  flex: none;
+}
+
+.tile-welcome {
+  width: 100%;
+  background-color: #4897d2;
+  color:white;
+}
+
+.tile-about {
+  color:white;
+  background-image: url("~../static/images/blockchain.png");
+  background-size: cover;
+}
+
+.tile-researchpackages {
+  color:white;
+  background-image: url("~../static/images/researcher.png");
+  background-size: cover;
+}
+
+.tile-donations {
+  background-color: khaki;
+  color: #4897d2;
+}
+
+.button-white {
+  border-color: white;
+  color: white;
+}
+
+.button-blue {
+  border-color:  #4897d2;
+  color:  #4897d2;
+}
+
+.tile-inner a{
+  color: lightgray;
+}

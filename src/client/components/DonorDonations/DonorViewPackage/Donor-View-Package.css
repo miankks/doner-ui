@@ -1,0 +1,95 @@
+.accordian-span span{
+    margin: 0px 0px 0px 35px;
+    clear: both;
+    overflow: hidden;
+}
+
+.below-progressbar{
+    padding-top: 20px;
+}
+
+.donation-area p{
+    padding-bottom: 20px;
+}
+
+.donation-heading-details{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.donation-heading-details div{
+    float: left;
+    padding-left: 30px;
+
+}
+.donation-heading-details div span{
+    color: blue;
+    display: block;
+    padding-bottom: 5px;
+}
+.donation-details{
+    display: block;
+    padding-left: 30px;
+}
+
+.donation-description-style{
+    padding-top: 10px;
+    color: blue;
+}
+
+.desciption1-text{
+    padding-top: 5px;
+    line-height: 1.5em;
+}
+
+.description2-text{
+    padding-top: 10px;
+    color: blue;
+    line-height: 1.5em;
+}
+
+.text-size{
+    font-size: 0.9em;
+}
+
+.table-span-accordian{
+    margin-left: 40px;
+}
+
+.table-inside-accordian{
+    padding-left: 28px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.year-image{
+    width: 20px;
+    padding-top: 2px;
+}
+.timeline-bar{
+    width:50%;
+    padding-top:2px;
+}
+
+
+.table-data-inside-accordian{
+    padding-left: 10px;
+    font-size: 0.8rem;
+}
+
+.table-inside-accordian th{
+    color: blue;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+.table-inside-accordian td{
+    padding-right: 40px;
+}
+
+.table-inside-accordian tr{
+    padding-left: 20px;
+}
+/* .bx--accordion__title {
+    font-size: 0.8rem;
+} */
