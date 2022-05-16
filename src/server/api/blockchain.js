@@ -21,18 +21,27 @@ function generateId(type) {
 
 function generateDate() {
   let d = new Date()
-  return d.toLocaleDateString('se-SE', { year: 'numeric', month: '2-digit', day: '2-digit' }) + ' ' + d.toLocaleTimeString('se-SE', { hour: '2-digit', minute: '2-digit' })
+  return (
+    d.toLocaleDateString('se-SE', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+    }) +
+    ' ' +
+    d.toLocaleTimeString('se-SE', { hour: '2-digit', minute: '2-digit' })
+  )
 }
 
 export function enrollUser(donatorId) {
-  return blockchain.request({
-    url: enrollPath,
-    method: 'post',
-    data: {
-      username: donatorId,
-      orgName: 'Org1'
-    }
-  })
+  return blockchain
+    .request({
+      url: enrollPath,
+      method: 'post',
+      data: {
+        username: donatorId,
+        orgName: 'Org1',
+      },
+    })
     .then((response) => {
       logger.debug('enroll user response', response.status, response.data)
       if (response.status != 200) {
@@ -44,16 +53,17 @@ export function enrollUser(donatorId) {
 }
 
 export function queryRecord(token, id) {
-  return blockchain.request({
-    url: chaincodePath,
-    method: 'get',
-    headers: { 'authorization': `Bearer ${token}` },
-    params: {
-      peer: peers[0],
-      fcn: 'queryRecord',
-      args: `["${id}"]`
-    }
-  })
+  return blockchain
+    .request({
+      url: chaincodePath,
+      method: 'get',
+      headers: { authorization: `Bearer ${token}` },
+      params: {
+        peer: peers[0],
+        fcn: 'queryRecord',
+        args: `["${id}"]`,
+      },
+    })
     .then((response) => {
       logger.debug('queryRecord response', response.status, response.data)
 
@@ -66,16 +76,24 @@ export function queryRecord(token, id) {
 }
 
 export function postDonation(token, donatorId, amount, packageId) {
-  return blockchain.request({
-    url: chaincodePath,
-    method: 'post',
-    headers: { 'authorization': `Bearer ${token}` },
-    data: {
-      peers: peers,
-      fcn: 'submitDonation',
-      args: [generateId('D'), donatorId, amount.toString(), packageId, generateId('SD'), generateDate()]
-    }
-  })
+  return blockchain
+    .request({
+      url: chaincodePath,
+      method: 'post',
+      headers: { authorization: `Bearer ${token}` },
+      data: {
+        peers: peers,
+        fcn: 'submitDonation',
+        args: [
+          generateId('D'),
+          donatorId,
+          amount.toString(),
+          packageId,
+          generateId('SD'),
+          generateDate(),
+        ],
+      },
+    })
     .then((response) => {
       logger.debug('postDonation response', response.status, response.data)
 
@@ -88,18 +106,23 @@ export function postDonation(token, donatorId, amount, packageId) {
 }
 
 export function queryDonationByDonator(token, donatorId) {
-  return blockchain.request({
-    url: chaincodePath,
-    method: 'get',
-    headers: { 'authorization': `Bearer ${token}` },
-    params: {
-      peer: peers[0],
-      fcn: 'queryDonationByDonator',
-      args: `["${donatorId}"]`
-    }
-  })
+  return blockchain
+    .request({
+      url: chaincodePath,
+      method: 'get',
+      headers: { authorization: `Bearer ${token}` },
+      params: {
+        peer: peers[0],
+        fcn: 'queryDonationByDonator',
+        args: `["${donatorId}"]`,
+      },
+    })
     .then((response) => {
-      logger.debug('queryDonationByDonator response', response.status, response.data)
+      logger.debug(
+        'queryDonationByDonator response',
+        response.status,
+        response.data
+      )
 
       if (response.status != 200) {
         return Promise.reject(response.data)
@@ -110,16 +133,17 @@ export function queryDonationByDonator(token, donatorId) {
 }
 
 export function queryAllPackages(token) {
-  return blockchain.request({
-    url: chaincodePath,
-    method: 'get',
-    headers: { 'authorization': `Bearer ${token}` },
-    params: {
-      peer: peers[0],
-      fcn: 'queryAllPackages',
-      args: '[""]'
-    }
-  })
+  return blockchain
+    .request({
+      url: chaincodePath,
+      method: 'get',
+      headers: { authorization: `Bearer ${token}` },
+      params: {
+        peer: peers[0],
+        fcn: 'queryAllPackages',
+        args: '[""]',
+      },
+    })
     .then((response) => {
       logger.debug('queryAllPackages response', response.status, response.data)
 
@@ -131,19 +155,29 @@ export function queryAllPackages(token) {
     })
 }
 
-export function getGrantsAndSubdonations(token, packageId, donatorId, donationId) {
-  return blockchain.request({
-    url: chaincodePath,
-    method: 'get',
-    headers: { 'authorization': `Bearer ${token}` },
-    params: {
-      peer: peers[0],
-      fcn: 'getGrantsAndSubdonations',
-      args: `["${packageId}", "${donatorId}", "${donationId}"]`
-    }
-  })
+export function getGrantsAndSubdonations(
+  token,
+  packageId,
+  donatorId,
+  donationId
+) {
+  return blockchain
+    .request({
+      url: chaincodePath,
+      method: 'get',
+      headers: { authorization: `Bearer ${token}` },
+      params: {
+        peer: peers[0],
+        fcn: 'getGrantsAndSubdonations',
+        args: `["${packageId}", "${donatorId}", "${donationId}"]`,
+      },
+    })
     .then((response) => {
-      logger.debug('getGrantsAndSubdonations response', response.status, response.data)
+      logger.debug(
+        'getGrantsAndSubdonations response',
+        response.status,
+        response.data
+      )
 
       if (response.status != 200) {
         return Promise.reject(response.data)
@@ -153,7 +187,6 @@ export function getGrantsAndSubdonations(token, packageId, donatorId, donationId
     })
 }
 
-
 export default {
   enrollUser,
   queryRecord,
@@ -161,5 +194,5 @@ export default {
   postDonation,
   queryDonationByDonator,
   queryAllPackages,
-  getGrantsAndSubdonations
+  getGrantsAndSubdonations,
 }

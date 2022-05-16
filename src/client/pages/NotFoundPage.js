@@ -7,9 +7,9 @@ const NotFoundPage = ({ staticContext = {} }) => {
 }
 
 NotFoundPage.propTypes = {
-  staticContext: PropTypes.object
+  staticContext: PropTypes.object,
 }
 
 export default {
-  component: NotFoundPage
+  component: NotFoundPage,
 }

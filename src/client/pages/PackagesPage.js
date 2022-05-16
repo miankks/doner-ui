@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {BreadcrumbsItem} from 'react-breadcrumbs-dynamic'
+import { BreadcrumbsItem } from 'react-breadcrumbs-dynamic'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { fetchActivePackages } from '../actions'
@@ -17,8 +17,10 @@ class PackagesPage extends Component {
   render() {
     return (
       <div>
-        <BreadcrumbsItem to='/'><HomePageIcon /></BreadcrumbsItem>
-        <BreadcrumbsItem to='/packages'>Jag vill bidra</BreadcrumbsItem>
+        <BreadcrumbsItem to="/">
+          <HomePageIcon />
+        </BreadcrumbsItem>
+        <BreadcrumbsItem to="/packages">Pågående kurser</BreadcrumbsItem>
         <PackageTiles packages={this.props.activePackages} />
       </div>
     )
@@ -27,12 +29,12 @@ class PackagesPage extends Component {
 
 PackagesPage.propTypes = {
   fetchActivePackages: PropTypes.func,
-  activePackages: PropTypes.arrayOf(PropTypes.object)
+  activePackages: PropTypes.arrayOf(PropTypes.object),
 }
 
 function mapStateToProps(state) {
   return {
-    activePackages: state.activePackages
+    activePackages: state.activePackages,
   }
 }
 
@@ -42,6 +44,7 @@ function loadData(store) {
 
 export default {
   loadData,
-  component: connect(mapStateToProps, { fetchActivePackages })(requireAuth(PackagesPage))
+  component: connect(mapStateToProps, { fetchActivePackages })(
+    requireAuth(PackagesPage)
+  ),
 }
-

@@ -10,7 +10,7 @@ import logging from './logging'
 import config from './config'
 
 import express from 'express'
-import session from 'express-session'
+// import session from 'express-session'
 import bodyParser from 'body-parser'
 
 import passport from './passport'
@@ -35,23 +35,24 @@ if (config.get('morgan:enabled')) {
 }
 app.use(
   bodyParser.urlencoded({
-    extended: false
+    extended: false,
   })
 )
 app.use(bodyParser.json())
 
-app.use(session({
-  secret: config.get('session_secret'),
-  name: config.get('cookie_name'),
-  proxy: true,
-  resave: true,
-  saveUninitialized: true
-}))
+// app.use(session({
+//   secret: config.get('session_secret'),
+//   name: config.get('cookie_name'),
+//   proxy: true,
+//   resave: true,
+//   saveUninitialized: true
+// }))
 
 app.use(passport.initialize())
-app.use(passport.session())
+// app.use(passport.session())
 
-const router = express.Router()
+const router = express
+  .Router()
   .use('/', controllers)
   .use('/', express.static(__dirname + '/static'))
 

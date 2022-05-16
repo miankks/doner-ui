@@ -1,5 +1,4 @@
 .header {
-
   float: left;
   width: 100%;
   position: relative;
@@ -11,7 +10,6 @@
 }
 
 .header-logo {
-
   /* margin-top: 1rem; */
   height: auto;
 }
@@ -21,10 +19,13 @@
   max-width: 100%;
 }
 
-.header-menu-row {}
+.header-menu-row {
+}
 
+.logo-image {
+  height: 10rem;
+}
 ul.menu {
-
   margin: 0;
   list-style-type: none;
   width: 100%;
@@ -44,7 +45,6 @@ ul.menu {
   width: auto;
   margin-bottom: 1.25rem;
 
-
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -53,30 +53,29 @@ ul.menu {
 }
 
 ul.menu.left {
-
   justify-content: flex-start;
 }
 
-.menu>li {
+.menu > li {
   margin-bottom: 0;
   flex: 0 0 auto;
 }
 
-.menu>li>a {
+.menu > li > a {
   flex-flow: row nowrap;
   padding: 0.3125rem 0.75rem;
   line-height: 1;
   text-decoration: none;
 }
 
-.menu.upper>li>a:hover {
+.menu.upper > li > a:hover {
   text-decoration: underline;
 }
 
-.menu.lower>li>a::after {
+.menu.lower > li > a::after {
   position: absolute;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  content: "";
+  content: '';
   bottom: -0.4375rem;
   left: 0;
   right: 0;
@@ -86,9 +85,7 @@ ul.menu.left {
   box-sizing: inherit;
 }
 
-
-.menu.lower>li>a:hover::after {
-
+.menu.lower > li > a:hover::after {
   opacity: 1;
 }
 
@@ -105,5 +102,5 @@ ul.menu.left {
 }
 
 .breadcrumbs-homeicon:before {
-  content: "\e93b"
+  content: '\e93b';
 }

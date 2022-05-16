@@ -19,15 +19,15 @@ const router = Router()
 router.get('/current_user', auth.ensureAuthenticated, (req, res) => {
   let user = {
     ...req.user,
-    name: req.user.firstname
+    name: req.user.firstname,
   }
 
   res.json(user)
 })
 
-
-router.get('/donations', auth.ensureAuthenticated, (req, res) => {
-  blockchainDonator.getDonations(req.user.token, req.user.id)
+router.get('/courses', auth.ensureAuthenticated, (req, res) => {
+  blockchainDonator
+    .getDonations(req.user.token, req.user.id)
     .then((result) => {
       res.json(result)
     })
@@ -37,13 +37,19 @@ router.get('/donations', auth.ensureAuthenticated, (req, res) => {
     })
 })
 
-router.post('/donations', auth.ensureAuthenticated, (req, res) => {
+router.post('/courses', auth.ensureAuthenticated, (req, res) => {
   if (req.body.amount <= 0 || !req.body.packageId) {
     res.status(400).json({ error: 'Bad input' })
     return
   }
 
-  blockchainDonator.postDonation(req.user.token, req.user.id, req.body.amount, req.body.packageId)
+  blockchainDonator
+    .postDonation(
+      req.user.token,
+      req.user.id,
+      req.body.amount,
+      req.body.packageId
+    )
     .then((result) => {
       res.json(result)
     })
@@ -54,7 +60,8 @@ router.post('/donations', auth.ensureAuthenticated, (req, res) => {
 })
 
 router.get('/packages/active', auth.ensureAuthenticated, (req, res) => {
-  blockchainDonator.getActivePackages(req.user.token)
+  blockchainDonator
+    .getActivePackages(req.user.token)
     .then((result) => {
       res.json(result)
     })
@@ -65,7 +72,8 @@ router.get('/packages/active', auth.ensureAuthenticated, (req, res) => {
 })
 
 router.get('/packages/:id', auth.ensureAuthenticated, (req, res) => {
-  blockchainDonator.getPackage(req.user.token, req.params.id)
+  blockchainDonator
+    .getPackage(req.user.token, req.params.id)
     .then((result) => {
       res.json(result)
     })
@@ -74,6 +82,5 @@ router.get('/packages/:id', auth.ensureAuthenticated, (req, res) => {
       res.json(null)
     })
 })
-
 
 export default router

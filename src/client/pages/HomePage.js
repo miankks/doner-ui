@@ -10,9 +10,11 @@ class HomePage extends Component {
   renderWelcome(user) {
     return (
       <div className="tile tile-welcome">
-        <div className='tile-inner'>
+        <div className="tile-inner">
           <h1>Hej {user.name}!</h1>
-          <p> Tack för att du är med i kampen mot fondon! Din gåva gör en stor skillnad i forskning mot fondon. </p>
+          <p>
+            Tack för att du är med Eways! Du gör en stor skillnad mot Eways.
+          </p>
         </div>
       </div>
     )
@@ -21,9 +23,12 @@ class HomePage extends Component {
   renderSignIn() {
     return (
       <div className="tile tile-welcome">
-        <div className='tile-inner'>
+        <div className="tile-inner">
           <h1>Hej!</h1>
-          <p>Välkommen till dina sidor på Fonden! <Link to='/login'>Logga in</Link> för att se dina gåvor och våra forskningsområden.</p>
+          <p>
+            Välkommen till dina sidor på Eways!{' '}
+            <Link to="/login">Logga in</Link> för att se dina framsteg.
+          </p>
         </div>
       </div>
     )
@@ -32,27 +37,14 @@ class HomePage extends Component {
   renderUserTiles() {
     return (
       <React.Fragment>
-        <div className='tile tile-researchpackages'>
-          <div className='tile-inner'>
-            <h1>Pågående insamlingar</h1>
-            <p>Vilka forskningsområden samlar vi in till just nu?</p>
+        <div className="tile tile-researchpackages">
+          <div className="tile-inner">
+            <h1>Pågående Kurser</h1>
+            <p>Vilka kurser erbjuder vi just nu?</p>
           </div>
-          <div className='tile-buttons'>
-            <Link to='/packages'>
+          <div className="tile-buttons">
+            <Link to="/packages">
               <Button kind="secondary" {...{ className: 'button-white' }}>
-                Läs mer!
-              </Button>
-            </Link>
-          </div>
-        </div>
-        <div className='tile tile-donations'>
-          <div className='tile-inner'>
-            <h1>Se dina tidigare gåvor</h1>
-            <p>Här får du koll på var dina gåvor befinner sig just nu.</p>
-          </div>
-          <div className='tile-buttons'>
-            <Link to='/donations'>
-              <Button kind="secondary" {...{ className: 'button-blue' }}>
                 Läs mer!
               </Button>
             </Link>
@@ -65,16 +57,18 @@ class HomePage extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className='row flex-row'>
-          {this.props.user ? this.renderWelcome(this.props.user) : this.renderSignIn()}
+        <div className="row flex-row">
+          {this.props.user
+            ? this.renderWelcome(this.props.user)
+            : this.renderSignIn()}
         </div>
-        <div className='row flex-row'>
-          <div className='tile tile-about'>
-            <div className='tile-inner'>
-              <h1>Blockchain håller koll på din gåva</h1>
+        <div className="row flex-row">
+          <div className="tile tile-about">
+            <div className="tile-inner">
+              <h1>Eways arbetar för att ge bästa</h1>
             </div>
-            <div className='tile-buttons'>
-              <Link to='/blockchain'>
+            <div className="tile-buttons">
+              <Link to="/ewaysinfo">
                 <Button kind="secondary" {...{ className: 'button-white' }}>
                   Läs mer!
                 </Button>
@@ -89,7 +83,7 @@ class HomePage extends Component {
 }
 
 HomePage.propTypes = {
-  user: PropTypes.object
+  user: PropTypes.object,
 }
 
 function mapStateToProps(state) {
@@ -97,5 +91,5 @@ function mapStateToProps(state) {
 }
 
 export default {
-  component: connect(mapStateToProps)(HomePage)
+  component: connect(mapStateToProps)(HomePage),
 }

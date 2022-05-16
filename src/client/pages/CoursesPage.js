@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {BreadcrumbsItem} from 'react-breadcrumbs-dynamic'
+import { BreadcrumbsItem } from 'react-breadcrumbs-dynamic'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { fetchDonations } from '../actions'
@@ -17,8 +17,10 @@ class DonationsPage extends Component {
   render() {
     return (
       <div>
-        <BreadcrumbsItem to='/'><HomePageIcon /></BreadcrumbsItem>
-        <BreadcrumbsItem to='/donations'>Mina gåvor</BreadcrumbsItem>
+        <BreadcrumbsItem to="/">
+          <HomePageIcon />
+        </BreadcrumbsItem>
+        <BreadcrumbsItem to="/donations">Mina Kurser</BreadcrumbsItem>
         <DonorViewPackage donations={this.props.donations} />
       </div>
     )
@@ -27,7 +29,7 @@ class DonationsPage extends Component {
 
 DonationsPage.propTypes = {
   fetchDonations: PropTypes.func,
-  donations: PropTypes.arrayOf(PropTypes.object)
+  donations: PropTypes.arrayOf(PropTypes.object),
 }
 
 function mapStateToProps(state) {
@@ -42,6 +44,7 @@ function loadData(store) {
 
 export default {
   loadData,
-  component: connect(mapStateToProps, { fetchDonations })(requireAuth(DonationsPage))
+  component: connect(mapStateToProps, { fetchDonations })(
+    requireAuth(DonationsPage)
+  ),
 }
-

@@ -4,7 +4,13 @@ import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 
 import { fetchUsers, fetchLogin } from '../actions'
-import { Dropdown, DropdownItem, TextInput, Modal, Button } from 'carbon-components-react'
+import {
+  Dropdown,
+  DropdownItem,
+  TextInput,
+  Modal,
+  Button,
+} from 'carbon-components-react'
 
 class LoginPage extends Component {
   constructor(props) {
@@ -16,7 +22,7 @@ class LoginPage extends Component {
       emailInvalid: false,
       password: '',
       passwordInvalid: false,
-      dialogOpen: false
+      dialogOpen: false,
     }
 
     this.handleUserChange = this.handleUserChange.bind(this)
@@ -35,7 +41,11 @@ class LoginPage extends Component {
     let value = event.value
 
     if (value > -1) {
-      this.setState({ userSelected: value, email: this.props.users[value].username, password: this.props.users[value].password })
+      this.setState({
+        userSelected: value,
+        email: this.props.users[value].username,
+        password: this.props.users[value].password,
+      })
     } else {
       this.setState({ userSelected: -1, email: '', password: '' })
     }
@@ -64,7 +74,12 @@ class LoginPage extends Component {
   }
 
   getConsent() {
-    if (this.state.email != '' && !this.state.emailInvalid && this.state.password != '' && !this.state.passwordInvalid) {
+    if (
+      this.state.email != '' &&
+      !this.state.emailInvalid &&
+      this.state.password != '' &&
+      !this.state.passwordInvalid
+    ) {
       this.setState({ dialogOpen: true })
     }
   }
@@ -72,11 +87,13 @@ class LoginPage extends Component {
   accept() {
     this.setState({ dialogOpen: false })
 
-    this.props.fetchLogin({ username: this.state.email, password: this.state.password }).then(() => {
-      this.setState({
-        redirectTo: '/'
+    this.props
+      .fetchLogin({ username: this.state.email, password: this.state.password })
+      .then(() => {
+        this.setState({
+          redirectTo: '/',
+        })
       })
-    })
   }
 
   cancel() {
@@ -88,67 +105,66 @@ class LoginPage extends Component {
       return <Redirect to={{ pathname: this.state.redirectTo }} />
     } else {
       return (
-        <div className='row'>
-          <p>
-            Detta är en demo.
-          </p>
+        <div className="row">
+          <p>Detta är en demo.</p>
 
-          <div className='full'>
-            <label className='bx--label'>Välj användare</label>
+          <div className="full">
+            <label className="bx--label">Välj användare</label>
             <Dropdown
-              id='user'
+              id="user"
               onChange={this.handleUserChange}
               value={this.state.userSelected}
-              ariaLabel='user'>
-              <DropdownItem value='-1'
-                itemText='' />
-              {this.props.users.map((user, i) =>
-                (<DropdownItem key={i} value={i + ''}
-                  itemText={user.firstname + ' ' + user.surname} />
-                ))}
+              ariaLabel="user"
+            >
+              <DropdownItem value="-1" itemText="" />
+              {this.props.users.map((user, i) => (
+                <DropdownItem
+                  key={i}
+                  value={i + ''}
+                  itemText={user.firstname + ' ' + user.surname}
+                />
+              ))}
             </Dropdown>
 
-
             <TextInput
-              id='username'
+              id="username"
               onChange={this.handleEmailChange}
-              placeholder='Enter your email'
+              placeholder="Enter your email"
               invalid={this.state.emailInvalid}
-              invalidText='A valid email adress is required'
-              labelText='Användarnamn'
+              invalidText="A valid email adress is required"
+              labelText="Användarnamn"
               value={this.state.email}
             />
-
 
             <TextInput
               id="password"
               onChange={this.handlePasswordChange}
-              placeholder='Enter your password'
+              placeholder="Enter your password"
               invalid={this.state.passwordInvalid}
               invalidText="A password is required"
-              labelText='Lösenord'
-              type='password'
+              labelText="Lösenord"
+              type="password"
               value={this.state.password}
             />
             <br />
-            <Button kind="secondary" onClick={this.getConsent}>Logga in</Button>
+            <Button kind="secondary" onClick={this.getConsent}>
+              Logga in
+            </Button>
           </div>
 
           <Modal
             onRequestClose={this.cancel}
             onBlur={this.cancel}
             open={this.state.dialogOpen}
-            modalHeading='Fonden Blockchain demo'
+            modalHeading="Eways demo"
             passiveModal
           >
-            <p className="bx--modal-content__text">
-              Detta är en demo!
-            </p>
+            <p className="bx--modal-content__text">Detta är en demo!</p>
             <br />
-            <Button kind="secondary" onClick={this.accept}>OK</Button>
-            {' '}
+            <Button kind="secondary" onClick={this.accept}>
+              OK
+            </Button>{' '}
             {/* <Button kind="secondary" onClick={this.cancel}>Nej</Button> */}
-
           </Modal>
         </div>
       )
@@ -167,5 +183,5 @@ function mapStateToProps(state) {
 }
 
 export default {
-  component: connect(mapStateToProps, { fetchUsers, fetchLogin })(LoginPage)
+  component: connect(mapStateToProps, { fetchUsers, fetchLogin })(LoginPage),
 }

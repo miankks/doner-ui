@@ -19,20 +19,20 @@ class DonorViewPackage extends Component {
     return [
       {
         key: 'id',
-        header: 'Gåva'
+        header: 'Gåva',
       },
       {
         key: 'dateOfDonation',
-        header: 'Datum'
+        header: 'Datum',
       },
       {
         key: '_researchPackage',
-        header: 'Paket'
+        header: 'Paket',
       },
       {
         key: '_amount',
-        header: 'Belopp'
-      }
+        header: 'Belopp',
+      },
     ]
   }
 
@@ -45,37 +45,39 @@ class DonorViewPackage extends Component {
         _researchPackage: {
           id: donation.researchPackage.id,
           name: donation.researchPackage.name,
-          render: (cell) => (<Link to={'/packages/' + cell.id}>{cell.name}</Link>),
+          render: (cell) => (
+            <Link to={'/packages/' + cell.id}>{cell.name}</Link>
+          ),
           sort: (cellA, cellB, { sortDirection, sortStates, locale }) => {
             if (sortDirection === sortStates.ASC) {
               return compare(cellB.name, cellA.name, locale)
             }
 
             return compare(cellA.name, cellB.name, locale)
-          }
+          },
         },
         _amount: {
           amount: donation.amount,
-          render: (cell) => (<Amount amount={cell.amount} />),
+          render: (cell) => <Amount amount={cell.amount} />,
           sort: (cellA, cellB, { sortDirection, sortStates, locale }) => {
             if (sortDirection === sortStates.ASC) {
               return compare(cellB.amount, cellA.amount, locale)
             }
 
             return compare(cellA.amount, cellB.amount, locale)
-          }
+          },
         },
         dateOfDonation: {
           date: donation.dateOfDonation,
-          render: (cell) => (cell.date).substring(0, 10),
+          render: (cell) => cell.date.substring(0, 10),
           sort: (cellA, cellB, { sortDirection, sortStates, locale }) => {
             if (sortDirection === sortStates.ASC) {
               return compare(cellB.amount, cellA.amount, locale)
             }
 
             return compare(cellA.amount, cellB.amount, locale)
-          }
-        }
+          },
+        },
       })
     })
 
@@ -83,7 +85,9 @@ class DonorViewPackage extends Component {
   }
 
   renderExpansion(id) {
-    let donation = this.props.donations.filter((donation) => { return donation.id == id })[0]
+    let donation = this.props.donations.filter((donation) => {
+      return donation.id == id
+    })[0]
 
     return (
       <div className="table-inside-accordian">
@@ -91,23 +95,55 @@ class DonorViewPackage extends Component {
           <tbody>
             <tr>
               <th style={{ color: '#4897d2', fontWeight: 'bold' }}>Projekt</th>
-              <th style={{ color: '#4897d2', fontWeight: 'bold' }}>Forskningsinstitut</th>
-              <th style={{ color: '#4897d2', fontWeight: 'bold', whiteSpace: 'pre' }}><pre>Ge en gåva                     Din gåva är mottagen                    Anslag Utbetalt                    Anslag Mottaget                 Forskningsrapport</pre></th>
-              <th ></th>
+              <th style={{ color: '#4897d2', fontWeight: 'bold' }}>
+                Forskningsinstitut
+              </th>
+              <th
+                style={{
+                  color: '#4897d2',
+                  fontWeight: 'bold',
+                  whiteSpace: 'pre',
+                }}
+              >
+                <pre>
+                  Ge en gåva Din gåva är mottagen Anslag Utbetalt Anslag
+                  Mottaget Forskningsrapport
+                </pre>
+              </th>
+              <th></th>
             </tr>
-            {
-              donation.researchPackage.projects.map((project) =>
-                (
-                  <tr key={project.id}>
-                    <td>{project.name}</td>
-                    <td>{project.organisation}</td>
-                    <td style={{ paddingTop: '30px', paddingLeft: '30px', width: '100%' }}><ProgressBarIndicator currentStep={project.status} reports={project.reports} /></td>
-                    <td>{project.status == 'Rapport mottagen' ? <Popup trigger={<img src={yearlyrepport} style={{ width: '30px'}} />} position="left center">
+            {donation.researchPackage.projects.map((project) => (
+              <tr key={project.id}>
+                <td>{project.name}</td>
+                <td>{project.organisation}</td>
+                <td
+                  style={{
+                    paddingTop: '30px',
+                    paddingLeft: '30px',
+                    width: '100%',
+                  }}
+                >
+                  <ProgressBarIndicator
+                    currentStep={project.status}
+                    reports={project.reports}
+                  />
+                </td>
+                <td>
+                  {project.status == 'Rapport mottagen' ? (
+                    <Popup
+                      trigger={
+                        <img src={yearlyrepport} style={{ width: '30px' }} />
+                      }
+                      position="left center"
+                    >
                       <div>{project.annualReport}</div>
-                    </Popup> : ''}</td>
-                  </tr>
-                ))
-            }
+                    </Popup>
+                  ) : (
+                    ''
+                  )}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -117,7 +153,15 @@ class DonorViewPackage extends Component {
   render() {
     return (
       <div>
-        <h2 style={{ paddingTop: '30px', paddingLeft: '20px', fontWeight: 'bold' }}>Här är status för dina gåvor</h2>
+        <h2
+          style={{
+            paddingTop: '30px',
+            paddingLeft: '20px',
+            fontWeight: 'bold',
+          }}
+        >
+          Här är status för dina Kurser
+        </h2>
 
         <ExpandableTable
           headers={this.headers()}
@@ -130,7 +174,7 @@ class DonorViewPackage extends Component {
 }
 
 DonorViewPackage.propTypes = {
-  donations: PropTypes.arrayOf(PropTypes.object)
+  donations: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default DonorViewPackage

@@ -1,7 +1,7 @@
 import App from './App'
 import HomePage from './pages/HomePage'
-import BlockchainPage from './pages/BlockchainPage'
-import DonationsPage from './pages/DonationsPage'
+import EwaysInfoPage from './pages/EwaysInfoPage'
+import CoursesPage from './pages/CoursesPage'
 import PackagePage from './pages/PackagePage'
 import PackagesPage from './pages/PackagesPage'
 import LoginPage from './pages/LoginPage'
@@ -16,45 +16,45 @@ export default [
       {
         ...HomePage,
         path: '/',
-        exact: true
+        exact: true,
       },
       {
-        ...BlockchainPage,
-        path: '/blockchain',
-        exact: true
+        ...EwaysInfoPage,
+        path: '/ewaysinfo',
+        exact: true,
       },
       {
-        ...DonationsPage,
-        path: '/donations'
+        ...CoursesPage,
+        path: '/courses',
       },
       {
         ...PackagePage,
         path: '/packages/:id',
-        exact: true
+        exact: true,
       },
       {
         ...PackagesPage,
         path: '/packages',
-        exact: true
+        exact: true,
       },
       {
         ...ThankYouPage,
         path: '/thankyou',
-        exact: true
+        exact: true,
       },
       {
         ...LoginPage,
         path: '/login',
-        exact: true
+        exact: true,
       },
       {
         ...LogoutPage,
         path: '/logout',
-        exact: true
+        exact: true,
       },
       {
-        ...NotFoundPage
-      }
-    ]
-  }
+        ...NotFoundPage,
+      },
+    ],
+  },
 ]

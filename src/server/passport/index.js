@@ -30,36 +30,36 @@ passport.deserializeUser((userJSON, done) => {
   done(null, user)
 })
 
-let strategy = new Strategy(
-  function (username, password, done) {
-    if (!username.match(/^[\w.\-+%]+@[\w-]+(\.[\w-]+)*\.[a-z]{2,}$/)) {
-      return done('Email could not be verified.', null)
-    }
-
-    let user = users.filter((user) => { return user.username == username && user.password == password })[0] || null
-
-    if (user) {
-      if (config.get('blockchain:enabled')) {
-        enrollUser(user.id)
-          .then((token) => {
-
-            done(null, {
-              ...user,
-              token
-            })
-          })
-          .catch((error) => {
-            logger.error('enroll error', error)
-            done('Unabled to enroll to blockchain')
-          })
-      } else {
-        done(null, user)
-      }
-    } else {
-      done('Username/password not found.', null)
-    }
+let strategy = new Strategy(function (username, password, done) {
+  if (!username.match(/^[\w.\-+%]+@[\w-]+(\.[\w-]+)*\.[a-z]{2,}$/)) {
+    return done('Email could not be verified.', null)
   }
-)
+
+  let user =
+    users.filter((user) => {
+      return user.username == username && user.password == password
+    })[0] || null
+
+  if (user) {
+    if (config.get('blockchain:enabled')) {
+      enrollUser(user.id)
+        .then((token) => {
+          done(null, {
+            ...user,
+            token,
+          })
+        })
+        .catch((error) => {
+          logger.error('enroll error', error)
+          done('Unabled to enroll to blockchain')
+        })
+    } else {
+      done(null, user)
+    }
+  } else {
+    done('Username/password not found.', null)
+  }
+})
 
 passport.use(strategy)
 
