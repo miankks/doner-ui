@@ -39,6 +39,18 @@ class HomePage extends Component {
       <React.Fragment>
         <div className="tile tile-researchpackages">
           <div className="tile-inner">
+            <h1>Nyheter</h1>
+          </div>
+          <div className="tile-buttons">
+            <Link to="/newspage">
+              <Button kind="secondary" {...{ className: 'button-white' }}>
+                Läs mer!
+              </Button>
+            </Link>
+          </div>
+        </div>
+        <div className="tile tile-researchpackages">
+          <div className="tile-inner">
             <h1>Pågående Kurser</h1>
             <p>Vilka kurser erbjuder vi just nu?</p>
           </div>
@@ -63,18 +75,6 @@ class HomePage extends Component {
             : this.renderSignIn()}
         </div>
         <div className="row flex-row">
-          <div className="tile tile-about">
-            <div className="tile-inner">
-              <h1>Eways arbetar för att ge bästa</h1>
-            </div>
-            <div className="tile-buttons">
-              <Link to="/ewaysinfo">
-                <Button kind="secondary" {...{ className: 'button-white' }}>
-                  Läs mer!
-                </Button>
-              </Link>
-            </div>
-          </div>
           {this.props.user ? this.renderUserTiles() : ''}
         </div>
       </React.Fragment>
@@ -92,4 +92,14 @@ function mapStateToProps(state) {
 
 export default {
   component: connect(mapStateToProps)(HomePage),
+}
+
+{
+  /* <div className="tile-buttons">
+                <Link to="/ewaysinfo">
+                  <Button kind="secondary" {...{ className: 'button-white' }}>
+                    Läs mer!
+                  </Button>
+                </Link>
+              </div> */
 }

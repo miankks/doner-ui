@@ -77,6 +77,14 @@ router.get('/packages/active', auth.ensureAuthenticated, (req, res) => {
   )
 })
 
+router.get('/newspage', auth.ensureAuthenticated, (req, res) => {
+  res.json(
+    allPackages.filter((project) => {
+      return project.active == true
+    })
+  )
+})
+
 router.get('/packages/:id', auth.ensureAuthenticated, (req, res) => {
   let pack =
     allPackages.filter((project) => {

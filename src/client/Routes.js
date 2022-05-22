@@ -8,6 +8,7 @@ import LoginPage from './pages/LoginPage'
 import LogoutPage from './pages/LogoutPage'
 import NotFoundPage from './pages/NotFoundPage'
 import ThankYouPage from './pages/ThankYouPage'
+import NewsPage from './pages/NewsPage'
 
 export default [
   {
@@ -50,6 +51,11 @@ export default [
       {
         ...LogoutPage,
         path: '/logout',
+        exact: true,
+      },
+      {
+        ...NewsPage,
+        path: '/newspage',
         exact: true,
       },
       {

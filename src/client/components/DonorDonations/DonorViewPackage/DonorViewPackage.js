@@ -14,27 +14,26 @@ class DonorViewPackage extends Component {
     super(props)
     this.renderExpansion = this.renderExpansion.bind(this)
   }
-
-  headers() {
-    return [
-      {
-        key: 'id',
-        header: 'Gåva',
-      },
-      {
-        key: 'dateOfDonation',
-        header: 'Datum',
-      },
-      {
-        key: '_researchPackage',
-        header: 'Paket',
-      },
-      {
-        key: '_amount',
-        header: 'Belopp',
-      },
-    ]
-  }
+  // headers() {
+  //   return [
+  //     {
+  //       key: 'id',
+  //       header: 'Gåva',
+  //     },
+  //     {
+  //       key: 'dateOfDonation',
+  //       header: 'Datum',
+  //     },
+  //     {
+  //       key: '_researchPackage',
+  //       header: 'Paket',
+  //     },
+  //     {
+  //       key: '_amount',
+  //       header: 'Belopp',
+  //     },
+  //   ]
+  // }
 
   createRows() {
     let rows = []
@@ -162,12 +161,12 @@ class DonorViewPackage extends Component {
         >
           Här är status för dina Kurser
         </h2>
-
+        {/* 
         <ExpandableTable
           headers={this.headers()}
           rows={this.createRows()}
           renderExpansion={this.renderExpansion}
-        />
+        /> */}
       </div>
     )
   }

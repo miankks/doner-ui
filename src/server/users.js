@@ -1,13 +1,13 @@
 const users = [
   {
-    id: 'DONATOR0',
+    id: 'EWAYS0',
     username: 'eways@example.com',
     firstname: 'Bilal',
     surname: 'Jan',
     password: 'password',
   },
   {
-    id: 'DONATOR0',
+    id: 'EWAYS1',
     username: 'ngeways@example.com',
     firstname: 'Peter',
     surname: 'Johansson',
