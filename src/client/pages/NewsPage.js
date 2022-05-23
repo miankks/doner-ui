@@ -1,66 +1,64 @@
 import React, { Component } from 'react'
+import { BreadcrumbsItem } from 'react-breadcrumbs-dynamic'
+import PropTypes, { object } from 'prop-types'
+import { connect } from 'react-redux'
 
-export default class NewsPage extends Component {
+import './HomePage.css'
+import HomePageIcon from '../components/HomePageIcon/HomePageIcone'
+import NewsApi from '../utils/getNews'
+import News from '../components/DonorDonations/DonorViewPackage/News'
+
+class NewsPage extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      news: [],
+      readMore: false,
+    }
+    this.setReadMore = this.setReadMore.bind(this)
+  }
+  componentDidMount() {
+    let newsData = ''
+    newsData = NewsApi.getNews()
+    this.setState({
+      news: newsData,
+    })
+  }
+  setReadMore = () => {
+    this.setState({
+      readMore: !this.state.readMore,
+    })
+  }
   render() {
-    return <div>NewsPage</div>
+    return (
+      <div>
+        <BreadcrumbsItem to="/">
+          <HomePageIcon />
+        </BreadcrumbsItem>
+        <BreadcrumbsItem to="/donations">Nyheter</BreadcrumbsItem>
+        <News
+          news={this.state.news}
+          readMore={this.state.readMore}
+          setReadMore={this.setReadMore}
+        />
+      </div>
+    )
   }
 }
 
-// import React, { useState, useEffect } from 'react'
-// // import Loading from './Loading'
-// // import ToursCreate from './Tours'
+NewsPage.propTypes = {
+  setReadMore: PropTypes.func,
+}
+function mapStateToProps(state) {
+  return {
+    news: state.news,
+  }
+}
+function loadData(store) {
+  return store.dispatch(NewsApi.getNews)
+}
 
-// const url = 'https://course-api.com/react-tours-project'
-
-// export default function NewsPage() {
-//   // const [loading, setLoading] = useState(true)
-//   // const [tours, setTours] = useState([])
-
-//   // const removeTour = (id) => {
-//   //   const newTours = tours.filter((tour) => tour.id !== id)
-//   //   setTours(newTours)
-//   // }
-
-//   // const fetchTours = async () => {
-//   //   // setLoading(true)
-//   //   try {
-//   //     const response = await fetch(url)
-//   //     const tours = await response.json()
-//   //     // setLoading(false)
-//   //     setTours(tours)
-//   //   } catch (error) {
-//   //     // setLoading(false)
-//   //     console.log(error)
-//   //   }
-//   // }
-
-//   // useEffect(() => {
-//   //   fetchTours()
-//   // }, [])
-//   // if (loading) {
-//   //   return (
-//   //     <main>
-//   //       <Loading />
-//   //     </main>
-//   //   )
-//   // }
-
-//   // if (tours.length === 0) {
-//   //   return (
-//   //     <main>
-//   //       <div className="title">
-//   //         <h2>no tours left</h2>
-//   //         <button onClick={fetchTours} className="btn">
-//   //           refresh
-//   //         </button>
-//   //       </div>
-//   //     </main>
-//   //   )
-//   // }
-//   return (
-//     <main>
-//       {/* <ToursCreate tours={tours} removeTour={removeTour} /> */}
-//       <div>News page</div>
-//     </main>
-//   )
-// }
+export default {
+  loadData,
+  component: connect(mapStateToProps)(NewsPage),
+}

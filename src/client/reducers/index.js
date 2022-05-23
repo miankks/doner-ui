@@ -5,6 +5,7 @@ import authUsersReducer from './authUsersReducer'
 import donationsReducer from './donationsReducer'
 import activePackagesReducer from './activePackagesReducer'
 import packagesReducer from './packagesReducer'
+import newsReducer from './newsReducer'
 
 export default combineReducers({
   auth: authReducer,
@@ -12,5 +13,6 @@ export default combineReducers({
   auth_users: authUsersReducer,
   donations: donationsReducer,
   activePackages: activePackagesReducer,
-  packages: packagesReducer
+  packages: packagesReducer,
+  news: newsReducer,
 })

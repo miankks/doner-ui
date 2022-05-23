@@ -18,6 +18,7 @@ const router = Router()
 import allPackages from './allPackages.json'
 import allGrants from './allGrants.json'
 import allDonations from './allDonations.json'
+import allNews from './news.json'
 //import allSubdonations from './allSubdonations.json'
 
 router.get('/current_user', auth.ensureAuthenticated, (req, res) => {
@@ -79,7 +80,7 @@ router.get('/packages/active', auth.ensureAuthenticated, (req, res) => {
 
 router.get('/newspage', auth.ensureAuthenticated, (req, res) => {
   res.json(
-    allPackages.filter((project) => {
+    allNews.filter((project) => {
       return project.active == true
     })
   )

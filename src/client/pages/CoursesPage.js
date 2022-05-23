@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { fetchDonations } from '../actions'
 
 import requireAuth from '../components/hocs/requireAuth'
-import DonorViewPackage from '../components/DonorDonations/DonorViewPackage/DonorViewPackage'
+import Tour from '../components/DonorDonations/DonorViewPackage/Tour'
 import './HomePage.css'
 import HomePageIcon from '../components/HomePageIcon/HomePageIcone'
 
@@ -21,7 +21,7 @@ class DonationsPage extends Component {
           <HomePageIcon />
         </BreadcrumbsItem>
         <BreadcrumbsItem to="/donations">Mina Kurser</BreadcrumbsItem>
-        <DonorViewPackage donations={this.props.donations} />
+        {/* <DonorViewPackage donations={this.props.donations} /> */}
       </div>
     )
   }

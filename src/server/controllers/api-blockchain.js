@@ -37,9 +37,9 @@ router.get('/courses', auth.ensureAuthenticated, (req, res) => {
     })
 })
 
-router.get('/newspage', auth.ensureAuthenticated, (req, res) => {
+router.get('/newspage', (req, res) => {
   blockchainDonator
-    .getDonations(req.user.token, req.user.id)
+    .getNews(req.user.token, req.user.id)
     .then((result) => {
       res.json(result)
     })
@@ -48,6 +48,18 @@ router.get('/newspage', auth.ensureAuthenticated, (req, res) => {
       res.json(null)
     })
 })
+
+// router.get('/newspage', auth.ensureAuthenticated, (req, res) => {
+//   blockchainDonator
+//     .getDonations(req.user.token, req.user.id)
+//     .then((result) => {
+//       res.json(result)
+//     })
+//     .catch((error) => {
+//       logger.error(error)
+//       res.json(null)
+//     })
+// })
 
 router.post('/courses', auth.ensureAuthenticated, (req, res) => {
   if (req.body.amount <= 0 || !req.body.packageId) {

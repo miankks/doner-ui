@@ -1,18 +1,19 @@
 /* actions for auth */
+import axios from 'axios'
 export const FETCH_USERS = 'fetch_users'
 export const fetchUsers = () => async (dispatch, getState, api) => {
   const res = await api.get('/auth/users')
 
   dispatch({
     type: FETCH_USERS,
-    payload: res
+    payload: res,
   })
 }
 
 export const FETCH_CURRENT_USER = 'fetch_current_user'
 export const fetchCurrentUser = () => async (dispatch, getState, api) => {
   let res = {}
-  
+
   try {
     res = await api.get('/api/current_user')
   } catch {
@@ -21,7 +22,7 @@ export const fetchCurrentUser = () => async (dispatch, getState, api) => {
 
   dispatch({
     type: FETCH_CURRENT_USER,
-    payload: res
+    payload: res,
   })
 }
 
@@ -31,7 +32,7 @@ export const fetchLogin = (params) => async (dispatch, getState, api) => {
 
   dispatch({
     type: FETCH_LOGIN,
-    payload: res
+    payload: res,
   })
 }
 
@@ -41,11 +42,22 @@ export const fetchLogout = () => async (dispatch, getState, api) => {
 
   dispatch({
     type: FETCH_LOGOUT,
-    payload: res
+    payload: res,
   })
 }
 
 /* other actions */
+
+export const FETCH_NEWS = 'fetch_news'
+export const fetchNews = () => async (dispatch, getState, api) => {
+  // const res = await api.get('/api/newspage')
+  const res = await axios.get('/api/newspage')
+  console.log('fetch news')
+  dispatch({
+    type: FETCH_NEWS,
+    payload: res,
+  })
+}
 
 export const FETCH_DONATIONS = 'fetch_donations'
 export const fetchDonations = () => async (dispatch, getState, api) => {
@@ -53,7 +65,7 @@ export const fetchDonations = () => async (dispatch, getState, api) => {
 
   dispatch({
     type: FETCH_DONATIONS,
-    payload: res
+    payload: res,
   })
 }
 
@@ -63,24 +75,23 @@ export const fetchActivePackages = () => async (dispatch, getState, api) => {
 
   dispatch({
     type: FETCH_ACTIVEPACKAGES,
-    payload: res
+    payload: res,
   })
 }
 
 export const FETCH_PACKAGEBYID = 'fetch_packageById'
 export const fetchPackageById = (params) => async (dispatch, getState, api) => {
-
   const res = await api.get('/api/packages/' + params.id)
 
   dispatch({
     type: FETCH_PACKAGEBYID,
-    payload: { id: params.id, data: res.data }
+    payload: { id: params.id, data: res.data },
   })
 }
 
 export const postDonation = (params) => async (dispatch, getState, api) => {
   // let res = {}
-  
+
   try {
     // res =
     await api.post('/api/donations', params)
